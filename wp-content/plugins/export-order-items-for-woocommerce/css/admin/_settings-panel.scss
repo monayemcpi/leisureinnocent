@@ -1,0 +1,72 @@
+// Order Filtering
+
+#hm_xoiwc_field_report_start,
+#hm_xoiwc_field_report_end {
+  max-width : 160px;
+  }
+
+#hm_xoiwc_report_field_selection {
+  //max-width  : 350px;
+  //max-height : 218px;
+  //overflow-y : auto;
+  //margin-top : 0;
+  }
+
+#ags-xoiwc-settings {
+  #hm_xoiwc_field_orderby, #hm_xoiwc_field_orderdir {
+    width : auto;
+    }
+
+  .submit {
+    button {
+      min-width : 200px;
+      }
+    }
+  }
+
+#ags-xoiwc-settings-settings:after {
+  content : "";
+  clear   : both;
+  display : table;
+  }
+
+.ags-xoiwc-settings-sidebar {
+  margin-top : 35px;
+
+  .ags-xoiwc-widget {
+    border        : 1px solid $darkBorderColor;
+    border-radius : 3px;
+    margin-bottom : 25px;
+    font-size     : 14px;
+
+    .inside {
+      padding : 25px 20px;
+      }
+
+    h2 {
+      margin      : 0 0 15px;
+      font-weight : 700;
+      }
+
+    .ags-xoiwc-button-secondary {
+      display : inline-block;
+      }
+
+    .widget-thumb {
+      width : 100%;
+      }
+    }
+  }
+
+@media (min-width : 980px) {
+  .ags-xoiwc-settings-left-area {
+    float         : left;
+    width         : 72%;
+    padding-right : 3%;
+    }
+  .ags-xoiwc-settings-sidebar {
+    float      : left;
+    width      : 25%;
+    margin-top : 0;
+    }
+  }

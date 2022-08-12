@@ -1,0 +1,13 @@
+.wc-back-btn-cart{
+display: inline;
+position: relative;
+top: -70px;
+left: 280px;
+}
+.woocommerce .wc-back-btn-cart a.button.wc-backward{
+padding: 2px 25px;
+text-transform: uppercase;
+font-size: 14px;
+width: max-content;
+letter-spacing: 1.5px;
+}

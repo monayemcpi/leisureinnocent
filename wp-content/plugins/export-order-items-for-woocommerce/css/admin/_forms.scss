@@ -1,0 +1,195 @@
+#ags-xoiwc-settings {
+
+  // Label
+  label {
+    display : block;
+    cursor  : default;
+
+    span.label {
+      @include formLabelMixin();
+      box-sizing    : border-box;
+      cursor        : default;
+      display       : block;
+      margin-bottom : 10px;
+      }
+
+    @media (min-width : $breakSmall) {
+      display : flex;
+
+      span.label {
+        width        : 20%;
+        margin-right : 20px;
+        }
+
+      // Input forms
+      input[type=email], input[type=password], input[type=tel], input[type=text], input[type=number], input[type=date], select, textarea {
+        flex : 1;
+        }
+      }
+    }
+
+  // Input forms
+  input[type=email], input[type=password], input[type=tel], input[type=text], input[type=number], input[type=date], select {
+    @include formInputMixin();
+    margin : 0;
+    }
+
+  select {
+    padding-right : 30px !important;
+
+    &:hover, &:focus {
+      color : inherit;
+      }
+    }
+
+  input[type=number] {
+    padding : 0 0 0 10px !important;
+    }
+
+  // Textarea
+  textarea {
+    @include formTextareaMixin();
+    }
+
+  // Button
+  input[type=submit], button {
+    line-height : normal !important;
+    }
+
+  // Radio button
+  input[type="radio"] {
+    @include formRadioMixin();
+    }
+
+  // Checkbox
+  input[type="checkbox"] {
+    @include formCheckboxMixin();
+    }
+
+  .ags-xoiwc-settings-description {
+    margin-top : 10px;
+    font-style : italic;
+    font-size  : 13px;
+
+    ul {
+      list-style-type : disc;
+      margin-left     : 20px;
+      }
+
+    @media (min-width : $breakSmall) {
+      padding-left : 20%;
+      margin-left  : 20px
+      }
+    }
+
+  /* Checkboxes list */
+  .ags-xoiwc-settings-cb-list {
+
+    &:not(:last-child) {
+      margin-bottom : 10px;
+      }
+
+    input[type=checkbox] {
+      margin-right : 10px;
+      }
+
+    label.ags-xoiwc-settings-title {
+      margin-bottom : 0;
+
+      span {
+        width : 100%;
+        }
+      }
+
+    label.ags-xoiwc-settings-cb-list-item {
+      align-items   : center;
+      margin-bottom : 15px;
+
+      span {
+        font-weight   : normal;
+        font-size     : 15px;
+        padding       : 0;
+        display       : inline-block;
+        margin-bottom : 0;
+        }
+      }
+
+    .ags-xoiwc-settings-cb-list-item-child {
+      margin-left : 30px;
+      }
+
+    .description {
+      margin-bottom : 15px;
+      }
+
+    @media (min-width : $breakSmall) {
+      display : flex;
+
+      label.ags-xoiwc-settings-title {
+        width         : 20%;
+        margin-right  : 20px;
+        margin-bottom : 0;
+        }
+
+      // Input forms
+      .ags-xoiwc-settings-content {
+        flex : 1;
+        }
+      }
+    }
+
+  // Row with multiple items in one line
+  .ags-xoiwc-settings-multirow {
+
+    label.ags-xoiwc-settings-title {
+      margin-bottom : 0;
+
+      span {
+        width : 100%;
+        }
+      }
+
+    .ags-xoiwc-settings-content {
+      display     : flex;
+      flex-wrap   : wrap;
+      align-items : center;
+
+      & > input, & > select, & > a {
+        margin-right  : 10px;
+        margin-bottom : 8px;
+        }
+      }
+
+    &.has-checkbox {
+      .ags-xoiwc-settings-content {
+        padding-left : 35px;
+        position     : relative;
+        }
+
+      input[type="checkbox"] {
+        position : absolute;
+        left     : 0;
+        top      : 8px;
+        }
+      }
+
+    @media (min-width : $breakSmall) {
+      display : flex;
+
+      label.ags-xoiwc-settings-title {
+        width         : 20%;
+        margin-right  : 20px;
+        margin-bottom : 0;
+        }
+
+      // Input forms
+      .ags-xoiwc-settings-content {
+        flex : 1;
+        }
+      }
+    }
+
+  .ags-xoiwc-ml-30 {
+    margin-left : 30px;
+    }
+  }

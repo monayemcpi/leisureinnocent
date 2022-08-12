@@ -1,0 +1,81 @@
+/* Tooltip text */
+.ags-xoiwc-settings-tooltip {
+
+  .ags-xoiwc-settings-tooltiptext {
+    font-size   : 13px;
+    color       : $baseFontColor;
+    padding-top : 10px;
+    font-style  : italic;
+
+    span {
+      display : none;
+      }
+    }
+
+  @media (min-width : $breakSmall) {
+    width               : 30px;
+    height              : 35px;
+    position            : absolute;
+    right               : 0;
+    top                 : 0;
+    text-align          : right;
+    background-image    : url("../images/question.svg");
+    background-repeat   : no-repeat;
+    background-position : center right;
+    background-size     : 23px;
+    opacity             : 0.8;
+
+    .ags-xoiwc-settings-tooltiptext {
+      visibility       : hidden;
+      width            : 300px;
+      background-color : #FFF;
+      padding          : 0 20px 20px;
+      box-shadow       : 0 0 35px 0 #E2E1D8;
+      text-align       : left;
+      font-style       : normal;
+
+      span {
+        display          : block;
+        margin           : 0 -20px 18px;
+        background-color : $agsMediumGreen;
+        color            : #FFF;
+        font-weight      : bold;
+        padding          : 10px 20px 8px;
+        font-size        : 15px;
+        }
+
+      /* Position the tooltip text */
+      position         : absolute;
+      z-index          : 1;
+      top              : 50%;
+      transform        : translateY(-50%);
+      left             : 0;
+      margin-left      : -345px;
+
+      /* Fade in tooltip */
+      opacity          : 0;
+      transition       : opacity 0.5s;
+
+      &::after {
+        content      : "";
+        position     : absolute;
+        top          : 50%;
+        transform    : translateY(-50%);
+        left         : 100%;
+        border-width : 8px;
+        border-style : solid;
+        border-color : transparent transparent transparent #FFF;
+        }
+      }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    &:hover {
+      opacity : 1;
+
+      .ags-xoiwc-settings-tooltiptext {
+        visibility : visible;
+        opacity    : 1;
+        }
+      }
+    }
+  }

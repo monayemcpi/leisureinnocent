@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/OpenSans-Normal",
+        "bold": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/OpenSans-Bold",
+        "italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/OpenSans-Italic",
+        "bold_italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/Segoe-Normal",
+        "bold": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/Segoe-Bold",
+        "italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/Segoe-Italic",
+        "bold_italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/RobotoSlab-Normal",
+        "bold": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/RobotoSlab-Bold",
+        "italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/currencies",
+        "bold": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/currencies",
+        "italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/currencies",
+        "bold_italic": "\/home\/leisurei\/public_html\/wp-content\/uploads\/wpo_wcpdf_c16a6ec89f36eb67364cd9bebc401afa\/fonts\/currencies"
+    }
+}

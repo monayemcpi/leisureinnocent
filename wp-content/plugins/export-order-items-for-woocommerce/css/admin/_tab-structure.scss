@@ -1,0 +1,12 @@
+
+.ags-xoiwc-settings-box {
+  position : relative;
+
+  &:not(:last-child) {
+    margin-bottom : 30px;
+    }
+
+  @media (min-width : $breakSmall) {
+    padding-right : 35px;
+    }
+  }

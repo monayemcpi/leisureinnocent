@@ -1,0 +1,130 @@
+2022-08-11T08:25:26+00:00 CRITICAL Uncaught RuntimeException: Error saving action: Database error. in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(36): ActionScheduler_ActionFactory->single('wc-admin_import...', Array, 1660206331, 'wc-admin-data')
+#3 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/queue/class-wc-action-queue.php(44): as_schedule_single_action(1660206331, 'wc-admin_import...', Array, 'wc-admin-data')
+#4 /home/leisurei/public_html/wp-content/plugins/woocommerce/src/Admin/Schedulers/SchedulerTraits.php(315): WC_Action_Queue->schedule_single(1660206331, 'wc-admin_import...', Array, 'wc-admin-data')
+#5 /home/leisurei/public_html/wp-content/plugins/woocommerce/src/Internal/Admin/Schedulers/CustomersScheduler.php(145): Automattic\WooCommerce\Internal\Admin\Schedulers\ImportScheduler::schedule_action('import', Array)
+#6 /home/leisurei/public_html/wp-content/plugins/woocommerce/src/Internal/Admin/Schedulers/CustomersScheduler.php(159): Automattic\WooCommerce\Internal\Admin\Schedulers\CustomersScheduler::schedule_import(101)
+#7 /home/leisurei/public_html/wp-includes/class-wp-hook.php(309): Automattic\WooCommerce\Internal\Admin\Schedulers\CustomersScheduler::schedule_import_via_last_active('4246', 101, 'wc_last_active')
+#8 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#9 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#10 /home/leisurei/public_html/wp-includes/meta.php(334): do_action('updated_user_me...', '4246', 101, 'wc_last_active', '1660176000')
+#11 /home/leisurei/public_html/wp-includes/user.php(1169): update_metadata('user', 101, 'wc_last_active', '1660176000', '')
+#12 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/wc-user-functions.php(906): update_user_meta(101, 'wc_last_active', '1660176000')
+#13 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/wc-user-functions.php(892): wc_update_user_last_active(101)
+#14 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): wc_current_user_is_active(Object(WP))
+#15 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#16 /home/leisurei/public_html/wp-includes/plugin.php(524): WP_Hook->do_action(Array)
+#17 /home/leisurei/public_html/wp-includes/class-wp.php(787): do_action_ref_array('wp', Array)
+#18 /home/leisurei/public_html/wp-includes/functions.php(1330): WP->main(Array)
+#19 /home/leisurei/public_html/wp-admin/includes/post.php(1239): wp(Array)
+#20 /home/leisurei/public_html/wp-admin/includes/class-wp-posts-list-table.php(166): wp_edit_posts_query()
+#21 /home/leisurei/public_html/wp-admin/edit.php(225): WP_Posts_List_Table->prepare_items()
+#22 {main}
+  thrown in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 86
+
+2022-08-11T08:25:39+00:00 CRITICAL Uncaught RuntimeException: Error saving action: Database error. in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(105): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(54): ActionScheduler_ActionFactory->recurring('woocommerce_cle...', Array, false, 86400, '')
+#3 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/DraftOrders.php(65): as_schedule_recurring_action(false, 86400, 'woocommerce_cle...')
+#4 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/DraftOrders.php(57): Automattic\WooCommerce\Blocks\Domain\Services\DraftOrders->maybe_create_cronjobs()
+#5 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): Automattic\WooCommerce\Blocks\Domain\Services\DraftOrders->install('')
+#6 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#7 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#8 /home/leisurei/public_html/wp-admin/admin-ajax.php(45): do_action('admin_init')
+#9 {main}
+  thrown in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 86
+
+2022-08-11T08:25:44+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:683
+Stack trace:
+#0 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php(597): ActionScheduler_DBStore->claim_actions(0, 25, NULL, Array, '')
+#1 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(153): ActionScheduler_DBStore->stake_claim(25)
+#2 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#3 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): ActionScheduler_QueueRunner->run('Async Request')
+#4 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#7 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#8 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): WP_Async_Request->maybe_handle('')
+#9 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#10 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#11 /home/leisurei/public_html/wp-admin/admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#12 {main}
+  thrown in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 683
+
+2022-08-11T08:27:02+00:00 CRITICAL Uncaught RuntimeException: Error saving action: Database error. in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(105): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(54): ActionScheduler_ActionFactory->recurring('woocommerce_cle...', Array, false, 86400, '')
+#3 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/DraftOrders.php(65): as_schedule_recurring_action(false, 86400, 'woocommerce_cle...')
+#4 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/DraftOrders.php(57): Automattic\WooCommerce\Blocks\Domain\Services\DraftOrders->maybe_create_cronjobs()
+#5 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): Automattic\WooCommerce\Blocks\Domain\Services\DraftOrders->install('')
+#6 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#7 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#8 /home/leisurei/public_html/wp-admin/admin-ajax.php(45): do_action('admin_init')
+#9 {main}
+  thrown in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 86
+
+2022-08-11T08:27:02+00:00 CRITICAL Uncaught RuntimeException: Error saving action: Database error. in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(105): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(54): ActionScheduler_ActionFactory->recurring('woocommerce_cle...', Array, false, 86400, '')
+#3 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/DraftOrders.php(65): as_schedule_recurring_action(false, 86400, 'woocommerce_cle...')
+#4 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/woocommerce-blocks/src/Domain/Services/DraftOrders.php(57): Automattic\WooCommerce\Blocks\Domain\Services\DraftOrders->maybe_create_cronjobs()
+#5 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): Automattic\WooCommerce\Blocks\Domain\Services\DraftOrders->install('')
+#6 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#7 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#8 /home/leisurei/public_html/wp-admin/admin-ajax.php(45): do_action('admin_init')
+#9 {main}
+  thrown in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 86
+
+2022-08-11T08:27:35+00:00 CRITICAL Uncaught RuntimeException: Error saving action: Database error. in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:86
+Stack trace:
+#0 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_ActionFactory.php(84): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/functions.php(36): ActionScheduler_ActionFactory->single('wc-admin_import...', Array, 1660206460, 'wc-admin-data')
+#3 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/queue/class-wc-action-queue.php(44): as_schedule_single_action(1660206460, 'wc-admin_import...', Array, 'wc-admin-data')
+#4 /home/leisurei/public_html/wp-content/plugins/woocommerce/src/Admin/Schedulers/SchedulerTraits.php(315): WC_Action_Queue->schedule_single(1660206460, 'wc-admin_import...', Array, 'wc-admin-data')
+#5 /home/leisurei/public_html/wp-content/plugins/woocommerce/src/Internal/Admin/Schedulers/CustomersScheduler.php(145): Automattic\WooCommerce\Internal\Admin\Schedulers\ImportScheduler::schedule_action('import', Array)
+#6 /home/leisurei/public_html/wp-content/plugins/woocommerce/src/Internal/Admin/Schedulers/CustomersScheduler.php(159): Automattic\WooCommerce\Internal\Admin\Schedulers\CustomersScheduler::schedule_import(101)
+#7 /home/leisurei/public_html/wp-includes/class-wp-hook.php(309): Automattic\WooCommerce\Internal\Admin\Schedulers\CustomersScheduler::schedule_import_via_last_active('4246', 101, 'wc_last_active')
+#8 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#9 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#10 /home/leisurei/public_html/wp-includes/meta.php(334): do_action('updated_user_me...', '4246', 101, 'wc_last_active', '1660176000')
+#11 /home/leisurei/public_html/wp-includes/user.php(1169): update_metadata('user', 101, 'wc_last_active', '1660176000', '')
+#12 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/wc-user-functions.php(906): update_user_meta(101, 'wc_last_active', '1660176000')
+#13 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/wc-user-functions.php(892): wc_update_user_last_active(101)
+#14 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): wc_current_user_is_active(Object(WP))
+#15 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#16 /home/leisurei/public_html/wp-includes/plugin.php(524): WP_Hook->do_action(Array)
+#17 /home/leisurei/public_html/wp-includes/class-wp.php(787): do_action_ref_array('wp', Array)
+#18 /home/leisurei/public_html/wp-includes/functions.php(1330): WP->main(Array)
+#19 /home/leisurei/public_html/wp-admin/includes/post.php(1239): wp(Array)
+#20 /home/leisurei/public_html/wp-admin/includes/class-wp-posts-list-table.php(166): wp_edit_posts_query()
+#21 /home/leisurei/public_html/wp-admin/edit.php(225): WP_Posts_List_Table->prepare_items()
+#22 {main}
+  thrown in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 86
+
+2022-08-11T08:28:17+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:683
+Stack trace:
+#0 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php(597): ActionScheduler_DBStore->claim_actions(0, 25, NULL, Array, '')
+#1 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(153): ActionScheduler_DBStore->stake_claim(25)
+#2 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#3 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): ActionScheduler_QueueRunner->run('Async Request')
+#4 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#7 /home/leisurei/public_html/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#8 /home/leisurei/public_html/wp-includes/class-wp-hook.php(307): WP_Async_Request->maybe_handle('')
+#9 /home/leisurei/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#10 /home/leisurei/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#11 /home/leisurei/public_html/wp-admin/admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#12 {main}
+  thrown in /home/leisurei/public_html/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 683
+

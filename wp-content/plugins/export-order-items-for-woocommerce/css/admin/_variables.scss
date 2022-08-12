@@ -1,0 +1,70 @@
+// ------------------------------------------------------------------------------------------- //
+//                            GLOBAL VARIABLES
+// ------------------------------------------------------------------------------------------- //
+
+// Color scheme
+$mainColor         : #FFAA35;
+$mainHoverColor    : #EF9922;
+
+// AGS Color Palette
+$agsPastelGreen    : #F5F4ED;
+$agsGreen          : #ACB67E;
+$agsMediumGreen    : #98A16F;
+$agsDarkGreen      : #787F57;
+
+$agsOrange         : #FFAA35;
+$agsDarkOrange     : #EF9922;
+
+$agsLightGrey      : #504D49;
+$agsDarkGrey       : #3D3B38;
+
+// Divi Space Color Palette
+$dsPastelPurple    : #B9B9E5;
+$dsLightPurple     : #6A61E6;
+$dsBrightPurple    : #9068FF;
+$dsMainPurple      : #340F96;
+$dsMediumPurple    : #2F0082;
+$dsDarkPurple      : #260065;
+$subMenuPurple     : #4E00C5;
+
+$neonBlue          : #53C8FD;
+$neonBlueDark      : #429FCA;
+
+$seaGreenLight     : #00C8C1;
+$seaGreen          : #00A99D;
+$seaGreenDark      : #077A70;
+
+// notification colors
+$success           : #3EBB79; // notification color: success
+$warning           : #FC3; // notification color: warning / info
+$danger            : #CC4A49; // notification color:error
+
+$whiteColor        : #FFF;
+$blackColor        : #000;
+
+// border colors
+$lightBorderColor  : #F3F6F8; // color for light borders
+$middleBorderColor : #E7EAEC; // color for dark borders
+$darkBorderColor   : #DDE2E5; // color for dark borders
+
+// Font
+$fontGeneral       : "Open Sans", sans-serif; // general font used in project
+$fontHeading       : "Open Sans", sans-serif; // font used for h1-h6 tags
+$fontButton        : "Nunito", sans-serif; // font used for buttons
+
+$baseSize          : 16px; // general font size
+$baseLineHeight    : 1.7; // general line height
+
+$baseFontWeight    : normal; // general font weight
+$baseHeadingWeight : bold; // h1-h6 tags font weight
+
+$baseFontColor     : #3D3B38; // general font color
+$baseHeaderColor   : #3D3B38; // h1-h6 tags font color
+
+// Rounded corners
+$mainRadius        : 1px; // general border radius
+
+$boxShadow         : 0 0 7.2px 2.8px rgba(61, 59, 56, 0.04);
+
+// Responsive breakpoints
+$breakSmall        : 767px;

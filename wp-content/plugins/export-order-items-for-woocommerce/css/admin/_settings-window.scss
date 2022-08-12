@@ -1,0 +1,48 @@
+/*  Settings container */
+#ags-xoiwc-settings-container {
+  margin : 30px 20px;
+  }
+
+/*  Settings window */
+#ags-xoiwc-settings {
+  border-radius      : $mainRadius;
+  font-weight        : normal;
+  -webkit-transition : all ease-in .3s;
+  transition         : all ease-in .3s;
+  font-size          : 15px;
+  line-height        : 1.6;
+  font-family        : $fontGeneral;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family : $fontGeneral;
+    line-height : 1.2;
+    }
+
+  form > input[type=submit] {
+    @include formButtonMixin("primary");
+    margin    : 25px 0 0;
+    padding   : 10px 25px !important;
+    font-size : 17px;
+    }
+  }
+
+/* Settings tab content */
+#ags-xoiwc-settings-tabs-content {
+  box-shadow       : $boxShadow;
+  background-color : #FFF;
+  padding          : 20px;
+
+  p {
+    margin-top : 0;
+    }
+
+  & > div[id^="ags-xoiwc-settings"] {
+    display : none;
+    }
+
+  & > .ags-xoiwc-settings-active {
+    display : block !important;
+    }
+  }
+
+

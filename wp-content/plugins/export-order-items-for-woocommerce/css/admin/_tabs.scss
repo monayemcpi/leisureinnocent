@@ -1,0 +1,49 @@
+/*
+ * 11.1 - Settings Tabs
+ */
+
+#ags-xoiwc-settings-tabs {
+  margin           : 0;
+  background-color : $agsLightGrey;
+  overflow         : hidden;
+
+  li {
+    margin      : 0;
+    float       : left;
+    display     : inline-block;
+    font-weight : 600;
+
+    font-size   : 14px;
+
+    @media (max-width : 600px) {
+      float     : none;
+      display   : block;
+      font-size : 13px;
+      }
+
+    a {
+      background-color   : transparent;
+      opacity            : 0.9;
+      color              : #FFF;
+      cursor             : pointer;
+      padding            : 13px 16px !important;
+      outline            : none;
+      text-decoration    : none;
+      -webkit-transition : all ease-in .3s;
+      transition         : all ease-in .3s;
+      box-shadow         : none;
+      display            : block;
+      letter-spacing     : 0.29px;
+
+      &:hover {
+        opacity          : 1;
+        background-color : $agsGreen;
+        }
+      }
+
+    &.ags-xoiwc-settings-active a {
+      opacity          : 1;
+      background-color : $agsMediumGreen;
+      }
+    }
+  }

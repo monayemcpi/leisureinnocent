@@ -1,0 +1,2 @@
+[2022-02-04 10:34:07] wpdesk.DEBUG: Sender payload: {"click_action":"plugin_deactivation","plugin":"flexible-shipping\/flexible-shipping.php","plugin_name":"Flexible Shipping","reason":"other","fs_method_created":2,"additional_data":{"fs_debug_notice_was_enabled":"no","fs_debug_notice_displayed":"no","beacon":{"clicked":"no"}}} {"source":"wpdesk-sender"} []
+[2022-02-04 10:34:09] wpdesk.DEBUG: Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null} {"source":"wpdesk-sender"} []

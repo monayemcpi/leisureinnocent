@@ -1,0 +1,76 @@
+/*
+ * 11.2 - Settings Header
+ */
+
+#ags-xoiwc-settings-header {
+  background      : $agsDarkGrey;
+  position        : relative;
+  padding         : 16px 23px;
+  justify-content : space-between;
+  display         : flex;
+  flex-wrap       : wrap;
+  align-items     : center;
+
+  @media (max-width : 600px) {
+    justify-content : center;
+
+    h3 {
+      text-align : center;
+      }
+    }
+
+  .ags-xoiwc-settings-logo {
+    h3 {
+      margin         : 5px 20px 5px 0;
+      color          : #FFF;
+      font-size      : 20px;
+      font-weight    : bold;
+      display        : inline-block;
+      vertical-align : middle;
+      }
+    }
+  }
+
+#ags-xoiwc-settings-header-links a {
+  text-decoration     : none;
+  color               : #FFFFFF;
+  font-size           : 14px;
+  opacity             : 0.54;
+  font-weight         : 600;
+  margin-left         : 20px;
+  padding             : 8px 16px 8px 30px;
+  display             : inline-block;
+  border-radius       : 4px;
+  background-size     : 28px;
+  background-repeat   : no-repeat;
+  background-position : left center;
+  box-shadow          : none;
+
+  &:hover {
+    opacity : 1;
+  }
+
+  &.active {
+    opacity : 1;
+  }
+
+  &:first-of-type {
+    margin-left : 0;
+  }
+}
+
+#ags-xoiwc-settings-header-link-settings {
+  background-image : url(../images/settings.svg);
+}
+
+#ags-xoiwc-settings-header-link-support {
+  background-image : url(../images/help.svg);
+}
+
+#ags-xoiwc-settings-header-link-upgrade {
+  background-image : url(../images/upgrade_pro.svg);
+}
+
+#ags-xoiwc-settings-header-link-review {
+  background-image : url(../images/review.svg);
+}

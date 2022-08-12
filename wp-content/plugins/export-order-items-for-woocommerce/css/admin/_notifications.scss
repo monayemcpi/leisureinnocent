@@ -1,0 +1,22 @@
+/* Floating notifications */
+
+.ags-xoiwc-notification {
+  margin-bottom : 15px;
+  @include notificationMixin();
+
+  p:last-of-type {
+    margin-bottom : 0;
+    }
+
+  &.ags-xoiwc-notification-success {
+    @include notificationMixin('success');
+    }
+
+  &.ags-xoiwc-notification-error {
+    @include notificationMixin('error');
+    }
+
+  &.ags-xoiwc-notification-warning {
+    @include notificationMixin('warning');
+    }
+  }
